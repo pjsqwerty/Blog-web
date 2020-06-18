@@ -10,18 +10,18 @@
                                 <div class="intro_detail">
                                     <div>
                                         程&nbsp;序：基于SpringBoot开发的个人博客程序。 <span class="wb_url"><a
-                                            href="https://github.com/DimpleFeng/DimpleBlog"
+                                            href="https://github.com/"
                                             target="_blank">GitHub</a></span><br>
-                                        域&nbsp;名：www.bianxiaofeng.com，创建于2017<span class="wb_url"><a
+                                        域&nbsp;名：www.asfred.com，创建于2020<span class="wb_url"><a
                                             href="https://wanwang.aliyun.com/"
                                             target="_blank">注册域名</a></span><br>
                                         服务器：阿里云轻量级应用服务器(2G)<span class="wb_url"><a
-                                            href="https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=3viaxu0k"
+                                            href="https://promotion.aliyun.com/ntms/yunparter/invite.html"
                                             target="_blank">购买空间</a></span><br>
-                                        备案号：蜀ICP备 19004343<br>
+                                        备案号：鄂ICP备19012717号<br>
                                     </div>
                                 </div>
-                                <h5>搭建博客目的 | Goal：</h5>
+                                <!--<h5>搭建博客目的 | Goal：</h5>
                                 <div class="intro_detail">
                                     <div>
                                         &nbsp;&nbsp;&nbsp;&nbsp;计算机、互联网这一类的东西，很多很庞杂，要想全部记住是不可能的事。所以在上大学不久，我就使用为知笔记、有道云或者OneNote这些笔记工具记录自己的笔记，方便自己什么时候遗忘了，再拿起来看看，
@@ -36,16 +36,16 @@
                                         <hr>
                                         &nbsp;&nbsp;&nbsp;&nbsp;我不认为个人博客网站需要多漂亮美丽，“内涵”很重要，如果装饰的很花哨，而内容平平一般，我觉得博客分享的意义便不复存在。
                                     </div>
-                                </div>
+                                </div>-->
                             </div>
                         </ul>
                         <span class="ly_button"><a href="/leaveComment" target="_blank">留言</a></span>
-                        <p class="ab_dubai">
-                        <div class="intro">
+
+<!--                      <p class="ab_dubai">   <div class="intro">
                             <h5>个人简介 | Resume：</h5>
                             <div class="intro_detail">
                                 <div>
-                                    人物：Dimple<br>
+                                    人物：Fred<br>
                                     性别：男<br>
                                     年龄：96后<br>
                                     身高：&lt; 2m<br>
@@ -103,7 +103,7 @@
                                     4、喜欢读书，照着书中示例专门敲错，然后去解决问题。<br>
                                 </div>
                             </div>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
             </Col>

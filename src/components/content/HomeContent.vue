@@ -16,7 +16,8 @@
                                   @refresh="refreshArticles"
                                   @menusControl="articlesMenusControl">
                     </SectionTitle>
-                    <ArticleListCell v-for="article in articles" :article="article" :key="article.id"></ArticleListCell>
+                    <ArticleListCell v-for="article in articles" :article="article" :key="article.id">
+                    </ArticleListCell>
                 </div>
             </Col>
             <Col :xs="24" :sm="24" :md="24" :lg="24" :xl="7">
@@ -70,12 +71,16 @@
                 articles: state => state.home.articles,
             }),
             showPage: function () {
-                return this.$store.state.home.articles.length > 0;
+                //console.info(this.$store.state.home.articles)
+                return true;
+                //return this.$store.state.home.articles.length > 0;
             }
         },
         beforeMount() {
             listCarousel().then(response => {
-                this.carouselList = response.data;
+                if(response.data.code == '200'){
+                    this.carouselList = response.data.data;
+                }
             });
             if (this.$store.state.home.articles.length === 0) {
                 this.getArticlesBaseInfo({

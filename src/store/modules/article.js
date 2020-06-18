@@ -18,7 +18,7 @@ export default {
         return new Promise((resolve, reject) => {
           BlogDetail(id).then((response) => {
             // 更新文章信息和权限信息
-            commit('UPDATE_ARTICLE_DETAIL_INFO', response.data);
+            commit('UPDATE_ARTICLE_DETAIL_INFO', response.data.data);
             // 更新文章页的meta信息
             // commit('UPDATE_DOCUMENT_TITLE', response.data.title, { root: true });
             // commit('UPDATE_DOCUMENT_DESCRIPTION', response.data.desc, { root: true });

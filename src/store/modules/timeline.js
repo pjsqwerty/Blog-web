@@ -10,9 +10,9 @@ export default {
   mutations: {
     UPDATE_TIMELINE_INFO(state, datas) {
       // 记录已有的post数量
-      state.totalCount += datas.rows.length;
+      state.totalCount += datas.data.rows.length;
       // 根据年月来分发更新timeline
-      datas.rows.map((post) => {
+      datas.data.rows.map((post) => {
         // 按年月分批
         let addYear = new Date(post.createTime.replace(/\-/g, "/") ).getFullYear();
         let addMonth = new Date(post.createTime.replace(/\-/g, "/")).getMonth();
@@ -29,7 +29,7 @@ export default {
       });
       state.timeline = Object.assign({}, state.timeline);
       // 判断是否还有更多
-      state.noMoreData = state.totalCount >= datas.total;
+      state.noMoreData = state.totalCount >= datas.data.total;
     },
     CLEAR_TIMELINE_INFO(state) {
       state.timeline = {};

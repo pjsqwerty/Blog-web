@@ -45,7 +45,7 @@ export default {
     GET_MENUS({state, commit}, params) {
       return new Promise((resolve, reject) => {
         listMenus().then((response) => {
-          commit('UPDATE_MENUS', response.data);
+          commit('UPDATE_MENUS', response.data.data);
           resolve(response);
         }).catch((error) => {
           reject(error);
@@ -56,7 +56,7 @@ export default {
     GET_CATEGORIES({state, commit}, params) {
       return new Promise((resolve, reject) => {
         listCategories().then((response) => {
-          commit('UPDATE_CATEGORIES', response.data);
+          commit('UPDATE_CATEGORIES', response.data.data);
           resolve(response);
         }).catch((error) => {
           reject(error);

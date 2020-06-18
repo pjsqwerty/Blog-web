@@ -189,8 +189,7 @@
             getInfoByQQ() {
                 if (this.form.qqNum != '') {
                     getInfoByQQ(this.form.qqNum).then(response => {
-                        console.log(response);
-                        if (response.code == 200) {
+                        if (response.data.code == 200) {
                             if (response.data.nickName == '') {
                                 this.$Message.error("获取信息失败,请手动填写");
                                 this.form.avatar = '';
@@ -310,7 +309,7 @@
                 this.form.url = this.url;
                 let obj = JSON.parse(JSON.stringify(this.form));
                 insertComment(obj).then((response) => {
-                    if (response.code == 200) {
+                    if (response.data.code == 200) {
                         // 清空评论框内容
                         this.form = {};
                         this.$Message.success("评论成功");

@@ -18,7 +18,7 @@ export default {
             return new Promise((resolve, reject) => {
                 BookDetail(params).then((response) => {
                     // 更新图书信息和权限信息
-                    commit('UPDATE_BOOK_INFO', response.data);
+                    commit('UPDATE_BOOK_INFO', response.data.data);
                 }).catch((error) => {
                     reject(error);
                 });

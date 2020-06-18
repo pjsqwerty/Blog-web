@@ -6,7 +6,7 @@
                     <Divider orientation="left">
                         <div class="header" style=";">
                             <Icon type="ios-at"/>
-                            <h4> &nbsp;&nbsp;DimpleBlog欢迎您的留言</h4>
+                            <h4> &nbsp;&nbsp;FredBlog欢迎您的留言</h4>
                         </div>
                     </Divider>
                     <SocialSection
@@ -41,7 +41,7 @@
         },
         created() {
             listComment(this.pageId).then(resposne => {
-                this.list = resposne.data;
+                this.list = resposne.data.data;
             });
         },
         components: {

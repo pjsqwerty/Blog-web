@@ -1,9 +1,9 @@
 <template>
     <div class="about">
         <img class="background" src="./../assets/background.jpg" alt="">
-        <img class="avatar" src="./../assets/avatar.png" alt="">
-        <p class="name">边小丰</p>
-        <p class="desc">Dimple Blog</p>
+        <img class="avatar" src="./../assets/avatar-1.png" alt="">
+        <p class="name">Fred</p>
+        <p class="desc">Fred Blog</p>
         <!--    <ul class="social">-->
         <!--      <li v-for="social in bloggerInfo.socials">-->
         <!--        <a :href="social.url" :target="social.url.indexOf(siteImageBaseUrl) === 0 ? '_self' : '_blank'"><img-->
@@ -56,8 +56,8 @@
         img.avatar
             position relative
             margin 75px auto 15px
-            width 100px
-            height 100px
+            width 120px
+            height 120px
             border-radius 50%
             border 5px solid $default-border-color
             z-index 9

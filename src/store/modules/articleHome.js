@@ -11,13 +11,13 @@ export default {
   mutations: {
     UPDATE_ARTICLES_BASE_INFO(state, datas) {
       // 记录已有的post数量
-      state.totalCount += datas.rows.length;
-      state.articles = state.articles.concat(datas.rows.filter((article) => {
+      state.totalCount += datas.data.rows.length;
+      state.articles = state.articles.concat(datas.data.rows.filter((article) => {
         return true;
       }));
       // 判断是否还有更多
-      state.noMoreData = state.totalCount >= datas.total;
-      state.bannerArticles = state.bannerArticles.concat(datas.rows.filter((article) => {
+      state.noMoreData = state.totalCount >= datas.data.total;
+      state.bannerArticles = state.bannerArticles.concat(datas.data.rows.filter((article) => {
         return article.support;
       }));
     },

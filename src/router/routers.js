@@ -26,7 +26,7 @@ export default [
                 meta: {
                     title: '首页',
                     content: {
-                        keywords: 'DimpleBlog,边小丰,Java',
+                        keywords: 'DimpleBlog,Fred,Java',
                         description: 'DimpleBlog,Java',
                     },
                 }
@@ -42,7 +42,7 @@ export default [
                 meta: {
                     title: '文章列表',
                     content: {
-                        keywords: 'DimpleBlog,边小丰,Java',
+                        keywords: 'DimpleBlog,Fred,Java',
                         description: 'DimpleBlog,Java',
                     },
                 }
@@ -58,7 +58,7 @@ export default [
                 meta: {
                     title: '文章列表',
                     content: {
-                        keywords: 'DimpleBlog,边小丰,Java',
+                        keywords: 'DimpleBlog,Fred,Java',
                         description: 'DimpleBlog,Java',
                     },
                 }
@@ -74,7 +74,7 @@ export default [
                 meta: {
                     title: '友链',
                     content: {
-                        keywords: 'DimpleBlog,边小丰,Java',
+                        keywords: 'DimpleBlog,Fred,Java',
                         description: 'DimpleBlog,Java',
                     },
                 }
@@ -90,7 +90,7 @@ export default [
                 meta: {
                     title: '留言',
                     content: {
-                        keywords: 'DimpleBlog,边小丰,Java,留言',
+                        keywords: 'DimpleBlog,Fred,Java,留言',
                         description: 'DimpleBlog,Java',
                     },
                 }
@@ -106,7 +106,7 @@ export default [
                 meta: {
                     title: '关于',
                     content: {
-                        keywords: 'DimpleBlog,边小丰,Java,关于',
+                        keywords: 'DimpleBlog,Fred,Java,关于',
                         description: 'DimpleBlog,Java',
                     },
                 }
@@ -121,7 +121,7 @@ export default [
                 meta: {
                     title: '时光轴',
                     content: {
-                        keywords: 'DimpleBlog,边小丰,Java',
+                        keywords: 'DimpleBlog,Fred,Java',
                         description: 'DimpleBlog,Java',
                     },
                 }
@@ -138,7 +138,7 @@ export default [
                     title: '文章详情',
                     need_log: false,
                     content: {
-                        keywords: 'DimpleBlog,边小丰,Java',
+                        keywords: 'DimpleBlog,Fred,Java',
                         description: 'DimpleBlog,Java',
                     },
                 }

@@ -1,5 +1,6 @@
 <template>
     <div class="article-home-content layout-content">
+        111長沙長沙查23
         <Row>
             <Col :xs="24" :sm="24" :md="24" :lg="17">
                 <div class="layout-left">
@@ -15,8 +16,9 @@
                                   @menusControl="menusControl"
                                   @confirmDateSelect="confirmDateSelect">
                     </SectionTitle>
+                    111長沙長沙查
                     <article-list-cell v-for="article in articles" :article="article"
-                                       :key="article.id"></article-list-cell>
+                                       :key="article.id">1</article-list-cell>
                     <BrowseMore @browseMore="browseMore" :noMoreData="noMoreData" ref="browseMore"></BrowseMore>
                 </div>
             </Col>

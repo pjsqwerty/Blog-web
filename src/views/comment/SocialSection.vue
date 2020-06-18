@@ -64,7 +64,8 @@
         methods: {
             getCommentInfo() {
                 listComment(this.pageId).then((response) => {
-                    this.commentList = response.data;
+                    console.info(response)
+                   this.commentList = response.data.data;
                     this.showSpin = false;
                 }).catch((error) => {
                     console.log(error);

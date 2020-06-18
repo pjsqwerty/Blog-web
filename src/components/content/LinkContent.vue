@@ -3,13 +3,13 @@
         <Row>
             <Col :xs="24" :sm="24" :md="24" :lg="17" :xl="17">
                 <div class="layout-left">
-                    <Divider orientation="left">
+                    <Divider orientation="left" v-if="list && list.length >0">
                         <div class="header" style=";">
                             <Icon type="ios-at"/>
                             <h4> &nbsp;&nbsp;本站友情链接</h4>
                         </div>
                     </Divider>
-                    <Row>
+                    <Row   v-if="list && list.length >0">
                         <Col v-for="link in list" :xs="8" :sm="8" :md="7" :lg="7" :xl="7">
                             <a :href="link.url"  style="color:#333;" @click="updateCount(link.id)">
                                 <Card style="height: 10rem;margin: 0.8rem 0.8rem 0.8rem 0">
@@ -41,11 +41,11 @@
                         </div>
                     </Divider>
                     <div class="desc">
-                        首页地址：https://www.bianxiaofeng.com <br>
-                        友链地址：https://www.bianxiaofeng.com/link.html<br>
-                        网站名称：Dimple的个人博客<br>
-                        网站描述：边小丰的个人博客，记录学习，记录生活。<br>
-                        网站图标地址：https://www.bianxiaofeng.com/favicon.ico
+                        首页地址：https://www.asfred.com <br>
+                        友链地址：https://www.asfred.com/link.html<br>
+                        网站名称：Fred的个人博客<br>
+                        网站描述：Fred的个人博客，记录学习，记录生活。<br>
+                        网站图标地址：https://www.asfred.com/favicon.ico
                     </div>
                     <Divider orientation="left">
                         <div class="header" style=";">
@@ -152,7 +152,7 @@
         },
         created() {
             listFriendLinks().then(response => {
-                this.list = response.data;
+                this.list = response.data.data;
             });
         },
         methods: {
@@ -170,7 +170,7 @@
                         this.loading = true;
                         let obj = JSON.parse(JSON.stringify(this.form));
                         insertFriendLink(obj).then(response => {
-                            if (response.code == 200) {
+                            if (response.data.code == 200) {
                                 this.$Notice.success({
                                     title: '申请成功,请等待系统自动审核!',
                                 });

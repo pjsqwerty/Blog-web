@@ -27,7 +27,7 @@ export default {
     GET_RECOMMENDS(store, params) {
       return new Promise((resolve, reject) => {
         listRecommend(params).then((response) => {
-          store.commit('UPDATE_RECOMMENDS', response.data);
+          store.commit('UPDATE_RECOMMENDS', response.data.data);
           resolve(response);
         }).catch((error) => {
           reject(error);
@@ -44,7 +44,7 @@ export default {
       };
       return new Promise((resolve, reject) => {
         listHot(params).then((response) => {
-          store.commit('UPDATE_HOTS', response.data);
+          store.commit('UPDATE_HOTS', response.data.data);
           resolve(response);
         }).catch((error) => {
           reject(error);
@@ -55,7 +55,7 @@ export default {
     GET_FRIEND_LINKS(store, params) {
       return new Promise((resolve, reject) => {
         listSupportFriendLink().then((response) => {
-          store.commit('UPDATE_FRIEND_LINKS', response.data);
+          store.commit('UPDATE_FRIEND_LINKS', response.data.data);
           resolve(response);
         }).catch((error) => {
           reject(error);
@@ -66,7 +66,7 @@ export default {
     GET_TAGS(store, params) {
       return new Promise((resolve, reject) => {
         listTag().then((response) => {
-          store.commit('UPDATE_TAGS', response.data);
+          store.commit('UPDATE_TAGS', response.data.data);
           resolve(response);
         }).catch((error) => {
           reject(error);

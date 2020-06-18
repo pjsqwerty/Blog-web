@@ -23,7 +23,8 @@ export default {
         GET_ARTICLES_BASE_INFO({state, commit}, params) {
             return new Promise((resolve, reject) => {
                 listBlogBaseInfo(params).then((response) => {
-                    commit('UPDATE_ARTICLES_BASE_INFO', response.rows);
+
+                    commit('UPDATE_ARTICLES_BASE_INFO', response.data.rows);
                     resolve(response);
                 }).catch((error) => {
                     reject(error);
@@ -34,7 +35,7 @@ export default {
         GET_BOOKS_BASE_INFO({state, commit}, params) {
             return new Promise((resolve, reject) => {
                 listBookBaseInfo(params).then((response) => {
-                    commit('UPDATE_BOOKS_BASE_INFO', response.rows);
+                    commit('UPDATE_BOOKS_BASE_INFO', response.data.rows);
                     resolve(response);
                 }).catch((error) => {
                     reject(error);
@@ -45,6 +46,7 @@ export default {
         GET_NOTES_BASE_INFO({state, commit}, params) {
             return new Promise((resolve, reject) => {
                 listNoteBaseInfo(params).then((response) => {
+
                     commit('UPDATE_NOTES_BASE_INFO', response.data.results);
                     resolve(response);
                 }).catch((error) => {
